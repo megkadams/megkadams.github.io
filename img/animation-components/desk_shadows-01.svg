@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 720" enable-background="new 0 0 1280 720" xml:space="preserve">
+<g opacity="0.3">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="665.0233" y1="393.1253" x2="696.8047" y2="338.0782">
+		<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_1_)" points="743.9,372.6 743.9,401.8 692.2,428.3 692.2,399.1 
+		603.9,354.8 626.9,343 626.9,313.9 679.8,340.4 701.1,329.8 701.1,341.1 691,346.1 	"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" points="743.9,372.6 743.9,401.8 765.2,391.1 765.2,362 	"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" points="671,409.8 671,438.9 692.2,428.3 692.2,399.1 	"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="625.5678" y1="449.757" x2="650.5497" y2="406.4871">
+		<stop  offset="0" style="stop-color:#000000;stop-opacity:0"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</linearGradient>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_2_)" points="671,409.8 671,438.9 623.6,463.9 623.6,385.4 	"/>
+	<polygon opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" points="743.9,372.6 691,346.1 720.2,344.5 
+		743.8,356.3 	"/>
+	<polygon opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" points="671,409.7 623.6,386 623.6,382.9 
+		646.5,381.6 670.1,393.5 	"/>
+	<polygon opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" fill="#231F20" points="679.8,340.4 626.9,313.9 656.1,312.2 
+		679.7,324 	"/>
+</g>
+</svg>
