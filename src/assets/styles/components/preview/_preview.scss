@@ -1,0 +1,16 @@
+.preview-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  .card-item {
+    max-width: 375px;
+    margin: 2rem auto 3rem;
+    text-align: left;
+  }
+  h6 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: normal;
+  }
+}

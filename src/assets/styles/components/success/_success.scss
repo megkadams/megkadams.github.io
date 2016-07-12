@@ -1,0 +1,31 @@
+.success-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: -8rem auto 0;
+  text-align: center;
+  min-height: calc(100vh - 8rem);
+  height: 100%;
+  .success-content-wrapper {
+    flex: 0 1 100%;
+  }
+  h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 3rem;
+    font-weight: normal;
+  }
+  p {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .pill-btn {
+    display: inline-block;
+    margin-top: 3rem;
+  }
+}

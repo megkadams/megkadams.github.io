@@ -1,0 +1,27 @@
+// =========================
+// Media Query Definitions
+// =========================
+
+// All units in ems
+$mqs: (
+  small-mobile: 30.666666, // 460  
+  almost-mobile: 38, // 570 
+  mobile: 51.133333, // 767
+  tablet: 68.333333, // 1025
+  small-desktop: 85.333333, // 1280
+  desktop: 100, // 1500
+);
+
+@mixin larger-than($size) {
+  $width: #{map-get($mqs, $size) * $base-font-size * 1px};
+  @media (min-width: $width) {
+    @content;
+  }
+}  
+
+@mixin smaller-than($size) {
+  $width: #{map-get($mqs, $size) * $base-font-size * 1px - 1};
+  @media (max-width: $width) {
+    @content;
+  }
+}  

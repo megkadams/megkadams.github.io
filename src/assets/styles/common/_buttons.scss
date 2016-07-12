@@ -1,0 +1,38 @@
+.pill-btn {
+  background: none;
+  border: 2px solid white;
+  border-radius: 500px;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pill-btn:focus {
+  outline: none;
+}
+
+.pill-btn + .pill-btn {
+  margin-left: 1.5rem;
+}
+
+.pill-btn.jumbo-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+}
+
+.pill-btn.super-jumbo-btn {
+  padding: 1.5rem 2.75rem;
+  font-size: 1.5rem;
+}
+
+.rainbow-btn {
+  background: linear-gradient(to right, rgba(64,155,189,1) 0%,rgba(245,47,202,1) 100%);
+}
+
+.pill-btn {
+  svg {
+    margin-top: -3px;
+    margin-right: 8px;
+  }
+}

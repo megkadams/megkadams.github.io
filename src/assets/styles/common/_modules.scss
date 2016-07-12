@@ -1,0 +1,37 @@
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.split-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 100%;
+  margin: 1rem 0 0;
+}
+
+.split-content.tri-split {
+  .split-block {
+    flex: 0 1 33.3333%;
+    text-align: center;
+    margin-bottom: 1rem;
+    svg {
+      margin-bottom: 1rem;
+    }
+    p {
+      text-align: center;
+      line-height: 1.25;
+    }
+  }
+}
