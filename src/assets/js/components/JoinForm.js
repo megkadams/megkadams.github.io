@@ -3,6 +3,7 @@ import h from '../helpers';
 import Icon from './Icons';
 import classNames from 'classnames'
 import FormInput from './FormInput'
+import Dropzone from 'react-dropzone'
 
 export default class JoinForm extends Component {
 	static propTypes = {
@@ -26,6 +27,9 @@ export default class JoinForm extends Component {
 
 	constructor(props) {
     super(props)
+		this.state = {
+			imageFiles: []
+		}
   }
 
 	componentDidMount() {
@@ -55,7 +59,7 @@ export default class JoinForm extends Component {
   }
 
 	renderOptions(type, name, value, index) {
-		var details = this.props.lady;
+		var details = this.props.lady
     var isChecked = function() {
       if (type == 'radio')
 				return value == this.props.lady[name]
@@ -79,6 +83,12 @@ export default class JoinForm extends Component {
     )
   }
 
+	onDrop(imageFiles) {
+		this.setState({
+      imageFiles: imageFiles
+    })
+		console.log(this.state.imageFiles)
+  }
 
 	render() {
 		const {
@@ -93,6 +103,10 @@ export default class JoinForm extends Component {
       github,
       twitter,
 		} = this.props.lady
+
+		const imageUploadStyle = this.state.imageFiles.length > 0 ? {
+		  backgroundImage: 'url(' + this.state.imageFiles[0].preview + ')'
+		} : { backgroundImage: '' }
 
 		return(
 			<form className='join-form' ref='joinForm' autoComplete='off'>
@@ -136,6 +150,15 @@ export default class JoinForm extends Component {
 					onChangeEvent={(e) => this.props.onUserInput(e, e.target.name, e.target.value)}
 					labelCopy='Location*'
 				/>
+
+				<Dropzone
+					onDrop={this.onDrop.bind(this)}
+					className='dropzone'
+					activeClassName='active-dropzone'
+					multiple={false}
+					style={imageUploadStyle}>
+          {this.state.imageFiles.length === 0 ? <div>Drag and drop or click to select a 550x550px file to upload.</div> : null}
+        </Dropzone>
 
 				<div className='input-container checkbox-group'>
 				  <span className='faux-label'>Select the tags that apply to you:</span><br/>
